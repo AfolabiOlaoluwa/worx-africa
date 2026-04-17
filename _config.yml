@@ -1,0 +1,10 @@
+title: WORX
+description: "WORX TECHNOLOGIES LIMITED: innovators behind Cartlinq and Cooperative."
+url: "https://worx.africa"
+baseurl: ""
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

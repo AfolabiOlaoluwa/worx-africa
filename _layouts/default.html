@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Page Title -->
+    <title>{{ page.title | default: "Worx" }}</title>
+
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="handheldfriendly" content="true">
+
+    <!-- Viewport Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <!-- PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="WORX TECHNOLOGIES LIMITED: innovators behind Cartlinq and Cooperative, leveraging experience across tech, commerce, energy, agriculture, and property. We creates tools that empower merchants and savers, grounded in broad operations across key industries.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:site_name" content="WORX">
+    <meta property="og:title" content="WORX.AFRICA">
+    <meta property="og:description" content="WORX TECHNOLOGIES LIMITED: innovators behind Cartlinq and Cooperative, leveraging experience across tech, commerce, energy, agriculture, and property. We creates tools that empower merchants and savers, grounded in broad operations across key industries.">
+    <meta property="og:image" content="https://worx.africa/assets/images/opengraph.png">
+    <meta property="og:url" content="https://worx.africa">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="WORX TECHNOLOGIES LIMITED">
+    <meta name="twitter:description" content="WORX TECHNOLOGIES LIMITED: innovators behind Cartlinq and Cooperative, leveraging experience across tech, commerce, energy, agriculture, and property. We creates tools that empower merchants and savers, grounded in broad operations across key industries.">
+    <meta name="twitter:image" content="https://worx.africa/assets/images/opengraph.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@Worx">
+    <meta name="twitter:site" content="@Worx">
+    <meta name="twitter:image:alt" content="WORX">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/images/favicon.png">
+
+    <!-- RSS Feeds -->
+    <link rel="alternate" type="application/atom+xml" title="Cartlinq Changelog" href="/cartlinq/changelog.atom">
+    <link rel="alternate" type="application/atom+xml" title="Cooperative Changelog" href="/cooperative/changelog.atom">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    {% if page.extra_styles %}
+    <style>{{ page.extra_styles }}</style>
+    {% endif %}
+  </head>
+
+  <body>
+    {{ content }}
+  </body>
+</html>
